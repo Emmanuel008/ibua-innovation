@@ -1,6 +1,9 @@
 import React from "react";
+import { useLocation } from 'react-router-dom'; 
+
 
 const Header = () => {
+  const location = useLocation()
   return (
     <>
       <nav className="navbar navbar-expand-lg">
@@ -28,27 +31,27 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link active" href="/">
+                <a className={location.pathname === "/" ? "nav-link active" : "nav-link"} href="/">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <a className={location.pathname === "/about" ? "nav-link active" : "nav-link"} href="/about">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/update">
+                <a className={location.pathname === "/update" ? "nav-link active" : "nav-link"} href="/update">
                   Update
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/faqs">
+                <a className={location.pathname === "/faqs" ? "nav-link active" : "nav-link"} href="/faqs">
                   FAQs
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
+                <a className={location.pathname === "/contact" ? "nav-link active" : "nav-link"} href="/contact">
                   Contact
                 </a>
               </li>

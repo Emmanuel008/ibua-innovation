@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/iBUA-LOGO.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/CSS/partner.css" />
     <link rel="stylesheet" href="%PUBLIC_URL%/CSS/slick.css" />
     <link rel="stylesheet" href="%PUBLIC_URL%/CSS/testimonial.css" />
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css" />
     <link
       rel="stylesheet"
       href="%PUBLIC_URL%/CSS/tooplate-little-fashion.css"
@@ -36,7 +36,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>iBUA website</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -54,39 +54,10 @@
     <script src="%PUBLIC_URL%/js/slick.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <!-- <script>
-      $(".clients-carousel").owlCarousel({
-        loop: true,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        animateOut: "fadeOut",
-        animateIn: "fadeIn",
-        smartSpeed: 450,
-        margin: 30,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          768: {
-            items: 2,
-          },
-          991: {
-            items: 3,
-          },
-          1200: {
-            items: 3,
-          },
-          1920: {
-            items: 3,
-          },
-        },
-      });
-    </script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
     <script>
       $(document).ready(function () {
         $(".customer-logos").slick({
@@ -111,6 +82,37 @@
               },
             },
           ],
+        });
+      });
+    </script>
+    <script>
+    $(document).ready(function () {
+        $(".clients-carousel").owlCarousel({
+          loop: true,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          smartSpeed: 450,
+          margin: 30,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            991: {
+              items: 3,
+            },
+            1200: {
+              items: 3,
+            },
+            1920: {
+              items: 3,
+            },
+          },
         });
       });
     </script>
